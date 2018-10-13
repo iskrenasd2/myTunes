@@ -1,0 +1,104 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,700');
+
+// Colours/Images
+$primary-color: #252529;
+$primary-text-color: #b90415;
+$primary-text-color-hover: #b90632;
+$secondary-color: #103063;
+$secondary-color-hover: #143f85;
+$light-color: #f4f4f4;
+$menu-color: #333;
+  // images
+$bg-img: url('../img/showcase.jpg') no-repeat center/cover;
+
+// Utility Classes
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+
+// buttons
+.btn {
+  padding: 1rem;
+  color: $light-color;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: $primary-text-color;
+}
+
+.btn-primary:hover {
+  background-color: $primary-text-color-hover;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+}
+
+.btn-secondary:hover {
+  background-color: $secondary-color-hover;
+}
+
+.text-light {
+  color: $light-color;
+}
+
+.bg-light {
+  background-color: $light-color;
+  color: $primary-color;
+}
+
+#showcase .container{
+  margin-top: 25vh;
+}
+
+#showcase {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  &.lead {
+    font-size: 1.3rem;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 326px) {
+  .gift-cards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-cols {
+    display: none !important;
+  }
+}
